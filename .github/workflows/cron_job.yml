@@ -2,7 +2,7 @@ name: CronRun
 on:
   schedule:
     # Runs "at minute 55 past every hour" (see https://crontab.guru)
-    - cron: '0/1 * * * *'
+    - cron: '0-59 * * * *'
 env :
   API_URL : "https://int.api.zscwp.io"
   AUTH_URL : "https://int-auth.zscwp.io"
