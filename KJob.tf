@@ -1,7 +1,7 @@
 resource "kubernetes_job" "example" {
   metadata {
     name      = "terraform-example"
-    namespace = "something"
+    namespace = "default"
     labels = {
       test = "MyExampleApp"
     }
