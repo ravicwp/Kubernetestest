@@ -1,7 +1,7 @@
 resource "kubernetes_replication_controller" "example" {
   metadata {
     name      = "terraform-example"
-    namespace = "something"
+    namespace = "default"
     labels = {
       test = "MyExampleApp"
     }
