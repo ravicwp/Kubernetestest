@@ -1,7 +1,7 @@
 resource "kubernetes_pod" "example" {
   metadata {
     name      = "terraform-example"
-    namespace = "something"
+    namespace = "default"
     labels = {
       test = "MyExampleApp"
     }
