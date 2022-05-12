@@ -3,7 +3,6 @@ kind: StatefulSet
 metadata:
   name: StatefulSet Template
   namespace: default
-  namespace: something
 spec:
   template:
     spec:
