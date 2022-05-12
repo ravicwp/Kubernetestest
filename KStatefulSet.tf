@@ -1,7 +1,7 @@
 resource "kubernetes_stateful_set" "example" {
   metadata {
     name      = "terraform-example"
-    namespace = "something"
+    namespace = "default"
     labels = {
       test = "MyExampleApp"
     }
