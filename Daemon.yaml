@@ -3,4 +3,4 @@ kind: DaemonSet
 metadata:
   name: DaemonSet Template
   namespace: default
-spec:
+spec
