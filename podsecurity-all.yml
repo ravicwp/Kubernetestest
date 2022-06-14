@@ -7,8 +7,6 @@ spec:
     rule: RunAsAny
   allowedCapabilities:
     - NET_RAW
-  requiredDropCapabilities:
-    - ALL
   privileged: true
   allowPrivilegeEscalation: true
   automountServiceAccountToken: true
@@ -20,4 +18,3 @@ spec:
   hostPorts:
   - min: 1
     max: 65536
-
