@@ -10,7 +10,7 @@ resource "kubernetes_stateful_set" "aktest" {
   spec {
     selector {
       match_labels = {
-        test = "aktest"
+        test = "aktest1"
       }
     }
   }
