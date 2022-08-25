@@ -1,16 +1,16 @@
-resource "kubernetes_job" "example" {
+resource "kubernetes_job" "ravitest2" {
   metadata {
-    name      = "terraform-example"
+    name      = "ravitest2"
     namespace = "default"
     labels = {
-      test = "MyExampleApp"
+      test = "ravitest2"
     }
   }
 
   spec {
     selector {
       match_labels = {
-        test = "MyExampleApp"
+        test = "ravitest2"
       }
     }
   }
