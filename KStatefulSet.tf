@@ -1,16 +1,16 @@
-resource "kubernetes_stateful_set" "example" {
+resource "kubernetes_stateful_set" "aktest" {
   metadata {
     name      = "terraform-example"
     namespace = "default"
     labels = {
-      test = "MyExampleApp"
+      test = "aktest"
     }
   }
 
   spec {
     selector {
       match_labels = {
-        test = "MyExampleApp"
+        test = "aktest1"
       }
     }
   }
