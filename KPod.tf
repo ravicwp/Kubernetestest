@@ -1,4 +1,4 @@
-resource "kubernetes_pod" "example" {
+resource "kubernetes_pod" "ravitest" {
   metadata {
     name      = "terraform-example"
     namespace = "default"
@@ -10,7 +10,7 @@ resource "kubernetes_pod" "example" {
   spec {
     selector {
       match_labels = {
-        test = "MyExampleApp"
+        test = "ravi"
       }
     }
   }
