@@ -3,14 +3,14 @@ resource "kubernetes_daemonset" "ravibranch" {
     name      = "terraform-example"
     namespace = "default"
     labels = {
-      test = "ravibranch"
+      test = "ravibranch1"
     }
   }
 
   spec {
     selector {
       match_labels = {
-        test = "ravibranch"
+        test = "ravibranch1"
       }
     }
   }
